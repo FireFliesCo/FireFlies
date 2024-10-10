@@ -1,0 +1,200 @@
+/* Fonts */
+/*Signika*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+/* Noto Naskh Arabic */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+
+:root {
+    --Article-text-Color: whitesmoke;
+    --loadingImgColor: #222222;
+    --hoveredOverText: rgb(248, 163, 83);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+}
+
+header {
+    height: 12%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+}
+
+h1#FirefliesNameId {
+    position: relative;
+
+    color: whitesmoke;
+    font-size: 3rem;
+
+    width: fit-content;
+
+    margin: 20px 100px;
+
+    cursor: pointer;
+}
+
+#MainDiv {
+    min-height: 20vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+
+.textSection {
+    color: var(--Article-text-Color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 80px 0 0 0;
+}
+
+.textSection>article {
+    font-size: 20px;
+    text-align: center;
+}
+
+.textSection>div {
+    width: 100%;
+    height: 30vh;
+
+    margin: 50px 0 20px 0;
+}
+
+.infoImage {
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+
+#contactInfoSection {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    background-color: var(--loadingImgColor);
+}
+
+#contactInfoSection>article {
+    width: 10%;
+    text-align: center;
+}
+
+#contactInfoSection>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    width: 10%;
+    height: 100%;
+}
+
+#contactInfoSection>div>a>img {
+    filter: invert();
+    scale: 2;
+}
+
+            /* phones */
+@media screen and (max-width: 480px) {
+
+    #contactInfoSection {
+        width: 100%;
+        height: 20vh;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+        background-color: var(--loadingImgColor);
+    }    
+
+    #contactInfoSection>article {
+        width: 40%;
+        text-align: center;
+
+        margin-right: 40px;
+    }
+
+    #contactInfoSection>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    
+        width: 10%;
+        height: 100%;
+
+        margin-left: 40px; 
+    }
+}
+
+            /* tablets and small laptops */
+@media screen and (max-width: 1024px) and (min-width:480px) {
+
+    #contactInfoSection {
+        width: 100%;
+        height: 20vh;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+        background-color: var(--loadingImgColor);
+    }    
+
+    #contactInfoSection>article {
+        width: 40%;
+        text-align: center;
+
+        margin-right: 140px;
+    }
+
+    #contactInfoSection>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    
+        width: 10%;
+        height: 100%;
+
+        margin-left: 140px; 
+    }
+}
