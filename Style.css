@@ -1,0 +1,259 @@
+:root {
+    --normalTextColor: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1 {
+    color: whitesmoke;
+    font-size: 80px;
+
+    margin: 30px;
+}
+
+body {
+    background-image: url('Imgs/Firefly.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#PageContainerDiv {
+    max-width: 100%;
+    min-height: 50%;
+
+    margin: 10px 40px;
+
+    border: solid 2px rgb(174, 174, 174);
+    border-radius: 5px;
+
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.352);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#textSection {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#textSection>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#textSection>div>p {
+    color: var(--normalTextColor);
+    font-size: 20px;
+    text-align: left;
+
+    transform: translateX(40%);
+}
+
+#textSection>div>img {
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    max-width: 100%;
+    min-height: 12%;
+
+    border: solid 2px rgb(174, 174, 174);
+    border-radius: 5px;
+
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.35);
+
+    margin: 10px 40px;
+}
+
+footer>div>a {
+    text-decoration: none;
+    color: var(--normalTextColor);
+    font-size: 20px;
+}
+
+/* Phones */
+@media screen and (max-width:480px) {
+
+    #PageContainerDiv {
+        margin: 0px 20px;
+
+        border: none;
+        border-radius: 5px;
+
+        backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    #textSection {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #textSection>div {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #textSection>div>p {
+        font-size: 16px;
+        text-align: center;
+        transform: translateX(0%);
+
+        width: 100%;
+
+        padding: 0 10px;
+        margin: 20px 0 20px 0;
+    }
+
+    #textSection>div>img {
+        max-width: 100%;
+    }
+
+    footer {
+        margin: 10px 20px;
+    }
+}
+
+/* Ipads */
+@media screen and (max-width:768px) {
+
+    #PageContainerDiv {
+        margin: 0px 20px;
+
+        border: none;
+        border-radius: 5px;
+
+        backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    #textSection {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #textSection>div {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #textSection>div>p {
+        font-size: 16px;
+        text-align: center;
+        transform: translateX(0%);
+
+        width: 100%;
+
+        padding: 0 10px;
+        margin: 20px 0 20px 0;
+    }
+
+    #textSection>div>img {
+        max-width: 100%;
+    }
+
+    footer {
+        margin: 10px 20px;
+    }
+}
+
+/* Laptops */
+@media screen and (min-width:768px) and (max-width:1350px){
+
+    #PageContainerDiv {
+        margin: 0px 20px;
+
+        border: none;
+        border-radius: 5px;
+
+        backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    #textSection {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    #textSection>div {
+        transform: translateX(-8%);
+
+        width: 95%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #textSection>div>p {
+        font-size: 20px;
+        text-align: left;
+        transform: translateX(25%);
+
+        width: 100%;
+
+        padding: 0 10px;
+        margin: 20px 0 20px 0;
+    }
+
+    #textSection>div>img {
+        max-width: 100%;
+    }
+
+    footer {
+        margin: 10px 20px;
+    }
+}
